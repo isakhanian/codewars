@@ -1,0 +1,17 @@
+def top3(products, amounts, prices):
+    goods = []
+    index = 0
+    while index < len(products):
+        goods_dict = {
+            'product': products[index], 
+            'amount': amounts[index],
+            'prices': prices[index],
+            'revenue': prices[index] * amounts[index]
+        }
+        goods.append(goods_dict)
+        index = index + 1
+    def key_getter(goods_dict):
+        return goods_dict['revenue']
+    goods = sorted(goods, key = key_getter, reverse=True)  
+    result = [goods[0]['product'], goods[1]['product'], goods[2]['product']]
+    return result
