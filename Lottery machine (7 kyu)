@@ -1,0 +1,11 @@
+def lottery(s):
+    result = ''
+    num_str = '1234567890'
+    for i in s:
+        if i in num_str:
+            if i not in result: 
+                result = result + i          
+    if result == '':
+        return "One more run!"
+    
+    return result 
