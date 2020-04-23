@@ -1,0 +1,15 @@
+def shark(pontoon_distance, shark_distance, you_speed, shark_speed, dolphin):
+    if dolphin == True:
+        shark_speed = int(shark_speed)/2
+    else:
+        shark_speed = shark_speed
+    your_time = pontoon_distance/you_speed
+    shark_time = shark_distance/shark_speed
+    if your_time < shark_time:
+        return "Alive!"
+    elif your_time > shark_time:
+        return "Shark Bait!"
+    elif your_time == shark_time:
+        return "Shark Bait!"
+    else:
+        return "fuck off"
