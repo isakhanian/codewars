@@ -1,0 +1,6 @@
+def calculate(s):
+    plus = s.replace('plus', ' +')
+    minus = plus.replace('minus', ' -')
+    lst = minus.split(' ')
+    result = sum([int(i) for i in lst])
+    return str(result)
