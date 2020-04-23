@@ -1,0 +1,8 @@
+def minimum_steps(numbers, value):
+    numbers.sort()
+    i = 1
+    new_lst = numbers[0:i]
+    while sum(new_lst) < value:
+      i += 1
+      new_lst = numbers[0:i]
+    return i - 1 
