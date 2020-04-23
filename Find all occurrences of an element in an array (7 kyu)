@@ -1,0 +1,9 @@
+def find_all(array, n):
+    index = 0
+    result = []
+    while index < len(array):
+        a = array[index]
+        if a == n:
+            result.append(index)
+        index = index + 1
+    return result 
