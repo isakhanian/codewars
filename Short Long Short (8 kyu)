@@ -1,0 +1,8 @@
+def solution(a, b):
+    if len(a) != 0 and len (b) != 0:
+        if len(a) > len(b):
+            return b + a + b
+        else:
+            return a + b + a
+    else:
+        pass
