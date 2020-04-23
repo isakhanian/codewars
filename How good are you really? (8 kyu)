@@ -1,0 +1,5 @@
+def better_than_average(class_points, your_points):
+    class_sum = sum(class_points)
+    class_count = len(class_points)
+    class_score = class_sum/class_count
+    return your_points > class_score
