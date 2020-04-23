@@ -1,0 +1,10 @@
+def remove(s):
+    a = len(s)
+    if a >= 1:
+        b = a-1
+        if s[-1] == "!":
+            return s[:b]
+        else:
+            return s
+    else:
+        return s
