@@ -1,0 +1,13 @@
+def is_very_even_number(n):    
+    if n < 10 and n % 2 == 0:
+      return True
+    if n < 10 and n % 2 != 0:
+      return False
+    else:
+      n = list(str(n))
+      b = []
+      for i in n:
+        i = int(i)
+        b.append(i)
+      sum_of_digits = sum(b)
+      return is_very_even_number(sum_of_digits)
