@@ -1,0 +1,9 @@
+def last(x):
+    alpha = list('abcdefghijklmnopqrstuvwxyz')
+    x = x.split(' ')
+
+    def key_getter(x):
+      return x[-1]
+    
+    x.sort(key=key_getter)
+    return x
