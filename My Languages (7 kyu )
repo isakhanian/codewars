@@ -1,0 +1,7 @@
+def my_languages(results):
+    result = results.items() # [('Python', 10), ('Java', 40)]
+    def key_getter(item): # item = ('Python', 10)
+      return item[1]
+    result = sorted(result, key = key_getter, reverse = True)
+    lst = [i[0] for i in result if i[1] >= 60]
+    return lst
