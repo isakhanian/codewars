@@ -1,0 +1,8 @@
+def tail_swap(strings):
+    strings = strings[0].split(':') + strings[1].split(':')
+    new_point1 = strings[1]
+    new_point2 = strings[3]
+    strings[1] = new_point2
+    strings[3] = new_point1
+    result = [strings[0] + ':' + strings[1]] + [strings[2] + ':' + strings[3]]
+    return result
