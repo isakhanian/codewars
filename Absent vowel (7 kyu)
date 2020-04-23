@@ -1,0 +1,5 @@
+def absent_vowel(x): 
+  vowels = 'aeiou'
+  for i in vowels:
+    if i not in x:
+      return vowels.index(i)
