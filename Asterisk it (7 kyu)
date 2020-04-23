@@ -1,0 +1,11 @@
+def asterisc_it(n):
+  index = 0
+  if type(n) is not list:
+    n = list(str(n))
+  elif type(n) is list:
+    n = list(str(''.join(str(i) for i in n)))
+  while index < len(n) - 1:
+    if int(n[index])%2 == 0 and int(n[index + 1])%2 == 0:
+      n[index] = n[index] + '*'
+    index += 1
+  return ''.join(n)
