@@ -1,0 +1,22 @@
+def segments(m, a):
+  b = []
+  i = 0
+  while i <=m:
+    index = 0
+
+    has_in_range = False
+
+
+    while index < len(a):
+      lst = a[index]
+      first = lst[0]
+      last = lst[1] + 1
+
+      if i in range(first, last):
+        has_in_range = True
+        break
+      index = index + 1
+    if not has_in_range:
+        b.append(i)
+    i = i + 1
+  return b
