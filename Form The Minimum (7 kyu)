@@ -1,0 +1,11 @@
+def join(lst):
+    result = ''
+    for i in lst:
+        result = result + str(i)
+    return result    
+
+def min_value(digits):
+    digits = list(set(digits))
+    digits = sorted(digits)
+    result = join(digits)
+    return int(result)
